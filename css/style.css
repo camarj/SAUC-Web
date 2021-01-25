@@ -113,7 +113,7 @@ a:active {
   color: #ffffff;
 }
 #fh5co-nav-slide .fh5co-nav-inner {
-  overflow-y: scroll;
+  overflow-y: none;
   text-align: center;
   padding: 2em 0;
   position: relative;
