@@ -59,46 +59,52 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
   </head>
   <body id="outer-page">
-    <div id="top"></div>
-    <div id="fh5co-page">
-      <nav role="navigation" id="fh5co-nav-slide">
-        <div class="container">
-          <div class="fh5co-nav-inner">
-            <ul>
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="#about">Nosotros</a></li>
-              <li><a href="#services">Productos</a></li>
-              <li><a href="#contacto">Contacto</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
+    <div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+                <a href="index.html" id="fh5co-header-logo"
+            ><img style="width: 30%" src="images/logo.svg" alt="Sprint Logo"
+          /></a>
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  
+  <div class="nav-links">
+    <a href="index.html" >Home</a>
+    <a href="#about" >About Us</a>
+    <a href="#services" >Services</a>
+    <a href="#products" >Products</a>
+    <a href="#contact" >Contact</a>
+  </div>
+</div>
       <header id="fh5co-header" role="banner">
         <div class="container">
-          <a href="index.html" id="fh5co-header-logo"
-            ><img style="width: 45%" src="images/logo.svg" alt="Sprint Logo"
-          /></a>
-          <a href="#" class="fh5co-header-bars js-nav-toggle"
-            ><span>Menu</span> <i class="ti-menu"></i
-          ></a>
+
 
           <h1 class="fh5co-header-intro">
-            Somos una empresa de trading internacional de alimentos.
+            We are an international food trading company.
           </h1>
         </div>
       </header>
       <!-- /fh5co-header -->
 
       <main id="fh5co-main" role="main">
-        <div class="container pb-lg">
+        <div class="container pb-lg" id="about">
           <div class="row">
-            <div class="col-md-12">
-              <div id="about" class="fh5co-heading text-center">
+            <div class="col-md-12" >
+              <div  class="fh5co-heading text-center">
                 <h2 class="fh5co-heading-title">
-                  Nosotros <span class="border"></span>
+                  About Us <span class="border"></span>
                 </h2>
                 <!-- <h3 class="fh5co-heading-intro">Design is the creation of a plan or convention for the construction of an object or a system as in architectural blueprints, engineering drawings, business processes, circuit diagrams and sewing patterns.</h3> -->
               </div>
@@ -110,18 +116,15 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
 								http://html5doctor.com/block-level-links-in-html-5/
 								 -->
                 <a  class="fh5co-block-links text-center">
-                  <div class="icon-circle">
+                  <div class="icon-circle" id="about">
                     <i class="ti-settings"></i>
                   </div>
-                  <h2>Misión</h2>
+                  <h2>Mission</h2>
                   <p>
-                    Ser la mejor alternativa para la comercialización, operación
-                    logística y distribución en el mercado internacional de
-                    frutas y pulpas congeladas, galletería y confitería, prendas
-                    textiles bordadas y/o estampadas, empaques y bolsas
-                    biodegradables, con la opción de empacar con marca propia,
-                    asegurando a nuestros clientes la seguridad y confianza de
-                    la transparencia de nuestros procesos.
+                    To be the best alternative for the commercialization, logistics operation and distribution in
+the international market of fresh fruits and fresh vegetables, tropical fruit pulps, shrimp,
+octopus, hearts of palm, organic coffee and confectionery, with the option of packing with
+own brand, ensuring our clients security, trust and transparency in our processes.
                   </p>
                 </a>
               </div>
@@ -132,13 +135,12 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
                   <div class="icon-circle">
                     <i class="ti-ruler-pencil"></i>
                   </div>
-                  <h2>Visión</h2>
+                  <h2>Vision</h2>
                   <p>
-                    Al 2025 seremos una empresa sólida, rentable y globalizada.
-                    Reconocida por nuestro nivel de servicio, productos con
-                    estándares de alta calidad, precios competitivos y por
-                    brindar soluciones integrales, oportunas y a la medida; con
-                    un equipo de trabajo comprometido y orientado al resultado
+                    By 2028 we will be a solid, profitable and globalized company. Recognized for our level of
+service, products with high quality standards, competitive prices and for providing
+comprehensive, timely and tailored solutions; with a committed and result-oriented work
+team
                   </p>
                 </a>
               </div>
@@ -149,22 +151,52 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
 
 
           <section class="fh5co-section" id="fh5co-testimonial">
-          <div class="container">
+          <div class="container" id="services">
+              <div class="fh5co-heading text-center">
+                <h2 class="fh5co-heading-title">
+                  Services <span class="border"></span>
+                </h2>
+              </div>
             <div class="owl-carousel-fullwidth">
-              <div class="item">
+              
+        <div class="item">
                 <p class="text-center valores">
-                  Trabajamos con seriedad y profesionalismo para construir y fortalecer alianzas que permitan desarrollar negocios de forma sostenible y a largo plazo basados en la transparencia, legalidad y eficiencia
+                  We work seriously and professionally to build and strengthen alliances that allow us to
+develop business in a sustainable and long-term way, based on transparency, legality and
+efficiency.
                   
                 </p>
               </div>
-              <div class="item">
+        <div class="item">
                 <p class="text-center valores">
-                  Hacemos el seguimiento de cada pedido desde que se recibe hasta que se entrega y confirmamos que el importador esté de acuerdo con la calidad y el servicio recibido.
+                  We work hand in hand with farmers and producers, thus guaranteeing fresh products of the
+highest quality
                 </p>
               </div>
-              <div class="item">
+        <div class="item">
                 <p class="text-center valores">
-                  Compromiso de hacer seguimiento de cada pedido desde que se recibe hasta que se entrega y confirmar que el importador está de acuerdo con la calidad y el servicio recibido.
+                  Frozen shrimps, prawns and octopus, with monitoring of the cold chain (fishing, production,
+packaging, storage and transportation) ensuring that the products do not lose their properties
+                </p>
+              </div>
+          <div class="item">
+                <p class="text-center valores">
+                  Our fruit pulps are made with the best selection of tropical fruits (mango, blackberry,
+strawberry, soursop, lulo, etc.), 100% natural, without additives or preservatives
+                </p>
+              </div>
+          <div class="item">
+                <p class="text-center valores">
+                  SAUC Inversiones SAS is an international product trading company, dedicated to the
+introduction of the products of our suppliers in the various international markets, as well as
+the location of products and representation in several South American countries (Colombia,
+Chile, Ecuador, Venezuela)
+                </p>
+              </div>
+          <div class="item">
+                <p class="text-center valores">
+                  We locate suppliers, manufacturers and/or products according to the buyer's needs, both for
+purchasing and manufacturing, always with high quality standards and competitive prices.
                 </p>
               </div>
             </div>
@@ -172,16 +204,13 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
         </section>
 
 
-        <div id="services" class="container" id="fh5co-journal">
+        <div id="products" class="container" id="fh5co-journal">
           <div class="row">
             <div class="col-md-12">
               <div class="fh5co-heading text-center">
                 <h2 class="fh5co-heading-title">
-                  Productos <span class="border"></span>
+                  Products <span class="border"></span>
                 </h2>
-                <h3 class="fh5co-heading-intro">
-                  Nos encargamos de la operación logística y distribución de  frutas y pulpas congeladas, galletería y confitería, prendas textiles bordadas y/o estampadas, empaques y bolsas biodegradables, con la opción de empacar con marca propia. Actualmente distribuimos los siguientes productos...
-                </h3>
               </div>
             </div>
           </div>
@@ -194,15 +223,18 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
                   <a href="#" class="fh5co-block-links hover-img">
                     <figure>
                       <img
-                        src="images/frutas2.jpg"
+                        src="images/Pulpas.jpg"
                         alt="Post Title"
                         class="img-responsive"
                       />
                       <div class="dark-overlay"></div>
                     </figure>
-                    <h2 class="meta-after">Pulpas de frutas</h2>
+                    <h2 class="meta-after">Fruits pulps</h2>
                     <p>
-                      es la parte comestible de la fruta, y son obtenidas por un proceso de extracción y tamizado de las frutas frescas y maduras, limpias y libres de pesticidas tóxicos.  La pulpa posee color, sabor, aroma y nutrientes de la fruta de la cual es extraída, y son la base idónea para la preparación de helados, postres, mermeladas, yogures, batidos, smoothies, entre otros.  
+                      It is the edible part of the fruit, and they are obtained by a process of extraction and sieving
+of fresh and ripe fruits, clean and free of toxic pesticides, The pulp has color, flavor, aroma
+and nutrients of the fruit from which it is extracted , and they are the ideal base for the
+preparation of ice creams, desserts, jams, yogurts, smoothies, among others.
                     </p>
                   </a>
                 </div>
@@ -218,10 +250,12 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
                       />
                       <div class="dark-overlay"></div>
                     </figure>
-                    <h2 class="meta-after">Camarones</h2>
+                    <h2 class="meta-after">Shrimps</h2>
                   
                     <p>
-                      Carne apetecida a nivel mundial, por su suave y rica textura, bajo en calorias y altos valores nutricionales, contiene vitamina A, B6, B12 y E, selenio, calcio, Magnesio, Manganeso, cobre, Zinc, Sodio Fosforo, potasio, hierro y Omega 3  
+                      Meat appreciated worldwide, for its soft and rich texture, low in calories, high in nutrients,
+contains vitamin A, B6, B12 and E, selenium, calcium, magnesium, manganese, copper, zinc,
+sodium, phosphorus, potassium, iron and Omega 3
                     </p>
                   </a>
                 </div>
@@ -237,10 +271,13 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
                       />
                       <div class="dark-overlay"></div>
                     </figure>
-                    <h2 class="meta-after">Palmitos</h2>
+                    <h2 class="meta-after">Palm hearts</h2>
 
                     <p>
-                      Se extraen de las palmas, principalmente de las cocoteras, la parte comestible es el corazón de la palmera, de color blanco. contiene muchas propiedades nutricionales, posee fibra, vitamina b6 y c, calcio, niacina, fósforo, potasio y zinc, contribuye a fortalecer el sistema inmunológico y sistema digestivo, ayuda a prevenir enfermedades cardíacas  
+                      They are extracted from the palms, mainly from the coconut palm trees, white in color. It
+contains many nutritional properties, it has fiber, vitamin B6 and C, calcium, niacin,
+phosphorus, potassium and zinc. Helps to strengthen the immune system and digestive
+system, helps prevent heart disease.
                     </p>
                   </a>
                 </div>
@@ -256,16 +293,16 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
                       />
                       <div class="dark-overlay"></div>
                     </figure>
-                    <h2 class="meta-after">Langostinos</h2>
+                    <h2 class="meta-after">Prawns</h2>
 
                     <p>
-                      considerado un superalimento, debido a que son bajo en grasas, fuente de proteínas, y Omega 3, que contribuyen a prevenir enfermedades mentales.
-Contiene vitamina B3, B9, B12, magnesio, Selenio, Sodio 
+                      Considered a superfood, because they are low in grass, a source of protein and Omega 3, which
+help prevent mental illness. Contains B3, B9, B12, Magnesium, Selenium, and Sodium. 
                     </p>
                   </a>
                 </div>
               </div>
-                            <div class="item">
+            <div class="item">
                 <div class="fh5co-image-text">
                   <a href="#" class="fh5co-block-links hover-img">
                     <figure>
@@ -276,14 +313,61 @@ Contiene vitamina B3, B9, B12, magnesio, Selenio, Sodio
                       />
                       <div class="dark-overlay"></div>
                     </figure>
-                    <h2 class="meta-after">Pulpos</h2>
+                    <h2 class="meta-after">Octopus</h2>
 
                     <p>
-                      ademas de exquisita, la carne contiene alta presencia de macro y micronutrientes, lo que la hace apetecida para suplir los requerimientos de nuestro cuerpo.  Posee una carne blanca y tierna, con un sabor suave casi dulce.  Contiene potasio, calcio, hierro, magnesio y vitaminas del grupo B (ácido fólico). El pulpo es uno de los pocos mariscos que no ofrece purinas al organismo  
+                      In addition to being exquisite, the meat contains a high presence of macro and micro
+nutrients, which makes it desirable to meet the requirements of our body. It has a white and
+tender meat, with a mild almost sweet taste, Contains potassium, calcium, iron, magnesium
+and vitamins of group B (folic acid). Octopus is one of the few shellfish that does not offer
+purines in the body.
                     </p>
                   </a>
                 </div>
               </div>
+                            <div class="item">
+                <div class="fh5co-image-text">
+                  <a href="#" class="fh5co-block-links hover-img">
+                    <figure>
+                      <img
+                        src="images/frutas2.jpg"
+                        alt="Post Title"
+                        class="img-responsive"
+                      />
+                      <div class="dark-overlay"></div>
+                    </figure>
+                    <h2 class="meta-after">Fruits </h2>
+                    <p>
+                      They are those edible products obtained from cultivated or wild plants, with a mostly sweet
+taste, and with a great variety of sizes, smells, colors and textures. They have a high content
+of water and nutrients, help the optimal functioning of the digestive system. (blackberry,
+strawberry, mango, lulo, guava, soursop, pitaya, passion fruit, etc.)
+                    </p>
+                  </a>
+                </div>
+              </div>
+                          <div class="item">
+                <div class="fh5co-image-text">
+                  <a href="#" class="fh5co-block-links hover-img">
+                    <figure>
+                      <img
+                        src="images/vegetales.jpg"
+                        alt="Post Title"
+                        class="img-responsive"
+                      />
+                      <div class="dark-overlay"></div>
+                    </figure>
+                    <h2 class="meta-after">Vegetables</h2>
+                    <p>
+                      Vegetables extracted from plants grown in the best fertile and nutrient-rich lands in South
+America. The original meaning is still commonly used and applied to plants collectively to refer
+to all edible plant matter. These vegetables can be eaten raw or cooked and play an important
+role in human nutrition as they are mostly low in fat and carbohydrates, but high in vitamins,
+minerals, and dietary fiber.
+                    </p>
+                  </a>
+                </div>
+              </div>  
             </div>
           </div>
           <!-- END .row -->
@@ -291,20 +375,21 @@ Contiene vitamina B3, B9, B12, magnesio, Selenio, Sodio
 
 
         <section class="fh5co-section" id="fh5co-workwithus">
-          <div id="contacto" class="container">
+          <div id="contact" class="container">
             <div class="fh5co-workwithus-intro">
-              <h2>¿Estas intersado? Entonces hablemos.</h2>
-              <h3 class="has-btn-after">
-                Estamos para ayudarle. :-)
-              </h3>
-              <p>
-                <a
-                  href="mailto:sauc.inversiones@gmail.com?Subject=Interesado%20en%20el%20servicio"
-                  class="btn btn-primary btn-lg btn-uppercase btn-effect"
-                  >Contactar <i class="ti-angle-right"></i
-                ></a>
-              </p>
+              <h2>Contact</h2>
             </div>
+<div class="div-form">
+              <form>
+       <label for="nombre">Name:</label>
+       <input id="nombre" name="nombre" placeholder="Nombre completo">
+       <label for="email">Email:</label>
+       <input id="email" name="email" type="email" placeholder="ejemplo@email.com">
+       <label for="mensaje">Message:</label>
+       <textarea id="mensaje" name="mensaje" placeholder="Danos tu mensaje"></textarea>
+       <input id="submit" name="submit" type="submit" value="Send">
+</form>
+</div>
           </div>
         </section>
 
@@ -336,7 +421,7 @@ Contiene vitamina B3, B9, B12, magnesio, Selenio, Sodio
           <div class="container">
             <p class="text-center">
               <small
-                >&copy; Copyright 2020 SAUC. Todos los derechos reseravados. <br />
+                >&copy; Copyright 2020 SAUC. All rights reserved.. <br />
             </p>
             <p class="text-center">
               <a href="#top" class="smoothscroll back-to-top"
@@ -345,15 +430,65 @@ Contiene vitamina B3, B9, B12, magnesio, Selenio, Sodio
             </p>
           </div>
         </div>
+        <div id="cajacookies">
+<p><button onclick="aceptarCookies()" class="pull-right"><i class="fa fa-times"></i> Accept and close this message</button>
+This website uses cookies, if you stay here you accept their use. You can read more about the use of cookies in our <a href="politics.html">Privacy Policy</a>.
+</p>
+</div>
       </footer>
+      <!--Div where the WhatsApp will be rendered-->  
+<div id="WAButton"></div>  
     </div>
+    <script>
+/* ésto comprueba la localStorage si ya tiene la variable guardada */
+function compruebaAceptaCookies() {
+  if(localStorage.aceptaCookies == 'true'){
+    cajacookies.style.display = 'none';
+  }
+}
 
-    <script src="js/jquery-1.10.2.min.js"></script>
+/* aquí guardamos la variable de que se ha
+aceptado el uso de cookies así no mostraremos
+el mensaje de nuevo */
+function aceptarCookies() {
+  localStorage.aceptaCookies = 'true';
+  cajacookies.style.display = 'none';
+}
+
+/* ésto se ejecuta cuando la web está cargada */
+$(document).ready(function () {
+  compruebaAceptaCookies();
+});
+</script>
+<script type="text/javascript">  
+   $(function () {
+           $('#WAButton').floatingWhatsApp({
+               phone: 'WHATSAPP-PHONE-NUMBER', //WhatsApp Business phone number
+               headerTitle: 'Chat with us on WhatsApp!', //Popup Title
+               popupMessage: 'Hello, how can we help you?', //Popup Message
+               showPopup: true, //Enables popup display
+               buttonImage: '<img src="images/whatsapp.svg" />', //Button Image
+               //headerColor: 'crimson', //Custom header color
+               //backgroundColor: 'crimson', //Custom background button color
+               position: "right" //Position: left | right
+
+           });
+       });
+</script>  
+<!--JQuery-->  
+
+
+
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/modernizr-2.6.2.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/custom.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.5.min.js"></script>  
+<!--Floating WhatsApp css-->  
+<link rel="stylesheet" href="js/floating-whatsapp-master/floating-wpp.min.css">  
+<!--Floating WhatsApp javascript-->  
+<script type="text/javascript" src="js/floating-whatsapp-master/floating-wpp.min.js"></script>
   </body>
 </html>

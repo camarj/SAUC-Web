@@ -569,7 +569,7 @@ a:active {
 }
 #fh5co-workwithus .fh5co-workwithus-intro {
   text-align: center;
-  padding: 5em 0;
+  padding: 2em 0;
 }
 #fh5co-workwithus .fh5co-workwithus-intro h2,
 #fh5co-workwithus .fh5co-workwithus-intro h3 {
@@ -1059,4 +1059,166 @@ a:active {
   font-size: 25px;
 }
 
-/*# sourceMappingURL=style.css.map */
+.nav {
+  height: 100px;
+  width: 100%;
+  background: rgba(77, 77, 77, 0.9);
+  position: fixed;
+  z-index: 100;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+  margin-left: 50px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+
+.principal {
+  display: block;
+  margin: 0 auto;
+  width: 510px;
+  color: #666666;
+  font-family: Arial;
+}
+
+.div-form {
+  margin-bottom: 50px;
+}
+
+form {
+  margin: 50px auto;
+  width: 350px;
+}
+
+input,
+textarea {
+  width: 350px;
+  height: 40px;
+  background: #666666;
+  border: 0.5px solid #f6f6f6;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+textarea {
+  height: 150px;
+}
+
+#submit {
+  width: 85px;
+  height: 50px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#cajacookies {
+  box-shadow: 0px 0px 5px 5px #808080;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 100;
+}
+
+#cajacookies button {
+  color: black;
+}
+
+.main-politcs {
+  padding: 10%;
+}
