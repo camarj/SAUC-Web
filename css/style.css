@@ -560,9 +560,9 @@ a:active {
 
 #fh5co-workwithus {
   clear: both;
-  background: #2e2e2e url(../images/section_bg.jpg) no-repeat fixed;
+  background: white no-repeat fixed;
   background-size: cover;
-  color: #fff;
+  color: #666666;
   margin-bottom: 4em;
   float: left;
   width: 100%;
@@ -1180,13 +1180,13 @@ input,
 textarea {
   width: 350px;
   height: 40px;
-  background: #666666;
-  border: 0.5px solid #f6f6f6;
+  background: white;
+  border: 0.5px solid #666666;
   border-radius: 4px;
   padding: 10px;
   margin-top: 5px;
   font-size: 18px;
-  color: #ffffff;
+  color: #666666;
 }
 
 textarea {
@@ -1221,4 +1221,9 @@ textarea {
 
 .main-politcs {
   padding: 10%;
+}
+
+.button-contact {
+  background-color: #0f78b1;
+  color: white;
 }
