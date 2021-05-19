@@ -1107,11 +1107,19 @@ a:active {
 }
 
 @media (max-width: 736px) {
+  .nav {
+    height: 110px;
+    width: 100%;
+    background: rgba(77, 77, 77, 0.9);
+    position: fixed;
+    z-index: 100;
+  }
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
     right: 0px;
     top: 0px;
+    margin-right: 40px;
   }
   .nav > .nav-btn > label {
     display: inline-block;
