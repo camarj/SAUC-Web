@@ -71,7 +71,7 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
           /></a>
     </div>
   </div>
-  <div class="nav-btn">
+  <div class="nav-btn" onclick=showNav()>
     <label for="nav-check">
       <span></span>
       <span></span>
@@ -81,10 +81,10 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
   
   <div class="nav-links">
     <a href="index.html" >Home</a>
-    <a href="#about" >About Us</a>
-    <a href="#services" >Services</a>
-    <a href="#products" >Products</a>
-    <a href="#contact" >Contact</a>
+    <a href="#about" onclick=hiddenNav() >About Us</a>
+    <a href="#services" onclick=hiddenNav()  >Services</a>
+    <a href="#products" onclick=hiddenNav() >Products</a>
+    <a href="#contact" onclick=hiddenNav() >Contact</a>
   </div>
 </div>
       <header id="fh5co-header" role="banner">
@@ -351,9 +351,9 @@ minerals, and dietary fiber.
        <label for="nombre">Full Name:</label>
        <input id="nombre" name="nombre" placeholder="Full name">
               <label for="nombre">Company:</label>
-       <input id="nombre" name="compañia" placeholder="Company">
+       <input id="company" name="compañia" placeholder="Company">
               <label for="nombre">Phone:</label>
-       <input id="nombre" name="telefono" placeholder="Phone">
+       <input id="phone" name="telefono" placeholder="Phone">
        <label for="email">Email:</label>
        <input id="email" name="email" type="email" placeholder="example@email.com">
        <label for="mensaje">Message:</label>
@@ -456,7 +456,7 @@ $(document).ready(function () {
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/custom.js"></script>
-    <script type="text/javascript" src="js/jquery-3.3.5.min.js"></script>  
+    <script type="text/javascript" src="js/custom2.js"></script> 
 <!--Floating WhatsApp css-->  
 <link rel="stylesheet" href="js/floating-whatsapp-master/floating-wpp.min.css">  
 <!--Floating WhatsApp javascript-->  

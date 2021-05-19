@@ -1106,7 +1106,7 @@ a:active {
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 736px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -1144,6 +1144,7 @@ a:active {
     display: block;
     width: 100%;
   }
+
   .nav > #nav-check:not(:checked) ~ .nav-links {
     height: 0px;
   }
