@@ -1106,7 +1106,7 @@ a:active {
   display: none;
 }
 
-@media (max-width: 736px) {
+@media (max-width: 812px) {
   .nav {
     height: 110px;
     width: 100%;
